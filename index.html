@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <meta name="description" content="Convert Youtube Videos">
+        <meta name="keywords" content="Mp3 Converter, Youtube Video Converter">
+        <meta name="author" content="Sultan">
+    <title>Tex8 | Welcome!</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="bg-dark">
+    <div class="col-md-6 offset-md-3 mt-5">
+    <div class="card">
+        <div class="card-header bg-info">
+        </div>
+        <div id="burger">
+<div class="card-body">
+
+<div class="row">
+    
+<div class="col-md-12">
+    
+   <div class="form-group">
+    <div id="Youtube">
+ <label class="text-weight"><b>Online Videos Link:</b></label>
+    
+ <input type="txt" name="link" class="form-control link" required>
+</div>
+ </div>
+    
+ </div>
+ <form class="form-download">
+    
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="form-group">
+            <div id="Format">
+          <label class="text-weight"><b>Select Video Format:</b></label>
+
+          <select class="form-control formte" required>
+
+            <option selected disabled>Select Video Format</option>
+        
+            <option value="mp3">Mp3</option>
+
+            <option value="mp4a">144 Mp4</option>
+
+            <option value="360">360 Mp4</option>
+
+            <option value="480">480 Mp4</option>
+
+            <option value="720">720 Mp4</option>
+
+            <option value="1080">1080 Mp4</option>
+
+            <option value="4k">4k Mp4</option>
+
+            <option value="8k">8k Mp4</option>
+        </div>
+          </select>
+
+    </div>
+    </div>
+    <div id="click">
+    <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="form-group mt-4 download-video">
+
+            <button class="btn btn-success btn-block click-btn-down" type="submit">Download</button>
+        </div>
+    </body>
+
+    <body>  
+<header>
+    <div class="container">
+        <div id="branding">
+            <ul>
+                <li> <a href="index.html"> <h1><span class="highlight">Youtube</span> Converter</h1></a></li>
+             </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li class="current"><a href="about.html">About</a></li>
+                <li class="current"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="showcase">
+    <div class="container">
+    </div>
+</section>
+    </body> 
+    <script type="text/javascript">
+
+        $(".click-btn-down").click(function(){
+      
+            var link = $(".link").val();
+      
+          var fromate = $(".formte").children("option:selected").val();
+      
+          var src =""+link+"="+fromate+"";
+      
+          downloadVideo(link,fromate);
+      
+        });
+      
+        function downloadVideo(link,fromate) {
+      
+            $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;margin-bottom:-30%;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+      
+        }
+      
+      </script>
+       
+<footer>
+    <p>All Rights Resereved &copy 2021</p> 
+ </footer>
+ 
+</html>
+
